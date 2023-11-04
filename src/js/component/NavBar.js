@@ -5,11 +5,15 @@ const NavBar = () => {
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+  let styleNav = {
+    backgroundColor: "yellow"
+  }
+
   return (
 
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg bg-warning">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Start Bootstrap</a>
+        <a className="navbar-brand" href="#">Majestic Stone Mountains</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded={!isNavCollapsed ? true : false} aria-label="Toggle navigation" onClick={handleNavCollapse}>
           <span className="navbar-toggler-icon"></span>
         </button>

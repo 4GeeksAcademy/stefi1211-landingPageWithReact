@@ -5,12 +5,15 @@ const Jumbotron = () => {
     let styleText = {
         fontSize: "70px"
     }
+    let styleJum = {
+        color: "white"
+    }
     return (
-        <div className="p-5 my-4 bg-primary bg-opacity-10 rounded-3">
-            <div className="container-fluid py-3">
-                <h1 className="display-5 fw-normal" style={styleText}>A Warm Welcome!</h1>
-                <p className="col-md-12 fs-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                <button className="btn btn-primary btn-lg" type="button">Call to action!</button>
+        <div className="p-5 my-4 bg-dark rounded-3">
+            <div className="container-fluid py-3" style={styleJum}>
+                <h1 className="display-5 fw-normal" style={styleText}>Unearth the Wonders of Stone Mountains</h1>
+                <p className="col-md-12 fs-6">Welcome to our Stone Mountains landing page, where the ancient and awe-inspiring beauty of nature meets the intrigue of geological wonders. Here, you'll find everything you need to know about these majestic formations of rock that have captivated explorers, scientists, and adventurers for centuries. </p>
+                <button className="btn btn-warning btn-lg" type="button">Find out more!</button>
             </div>
         </div>
     );
